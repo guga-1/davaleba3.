@@ -1,0 +1,47 @@
+1.
+function calculateTriangleArea(a, b, c)
+    
+    local s = (a + b + c) / 2
+    
+ 
+    local area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+    
+    return area
+end
+2.
+
+function checkNumber(num)
+    return num > 7
+end
+
+
+math.randomseed(os.time())
+local randomNumber = math.random(1, 10)
+
+
+local result = checkNumber(randomNumber)
+
+
+print(result)
+3.
+
+function sumMultiplesOfThree(startNum, endNum)
+    local sum = 0
+    for i = startNum, endNum do
+        if i % 3 == 0 then
+            sum = sum + i
+        end
+    end
+    return sum
+end
+
+
+local startNumber = 1
+local endNumber = 20
+
+
+local result = sumMultiplesOfThree(startNumber, endNumber)
+
+
+print(result)
+
